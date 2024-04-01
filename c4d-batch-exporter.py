@@ -11,7 +11,7 @@ def main():
        
     """
     try:
-    	importDpath = c4d.gui.InputDialog('Insert path of the C4D files directory', '~/Desktop/old-files')
+        importDpath = c4d.gui.InputDialog('Insert path of the C4D files directory', '~/Desktop/old-files')
         importpath = os.path.expanduser(importDpath)
         newfolder1 = str(importpath + '/FBX_export')
         newfolder2 = str(importpath + '/OBJ_export')
