@@ -1,16 +1,18 @@
 ## What?
-Batch FBX-exporter for Cinema4D. 
-Got loads of c4d files needed to be exporter to FBX for further pipeline use? I got your back.
+This is based on [joppevos/Cinema4D-FBX-Batchexporter: Batch FBX-exporter for Cinema4D](https://github.com/joppevos/Cinema4D-FBX-Batchexporter). 
+
+I couldn't get it to work on my Mac. I suspect it's fine on Windows (since it specifies a Windows location for the scripts folder).
+
+## Why?
+I have a lot of **pre-r19 files** that I needed to save out from r19 so I could open them in later versions. I also thought it might useful to have alternate formats in case I stopped using c4d. 
+
+This will ask for a folder of .c4d files and export into folders for .obj, .fbx  and .c4d. Saving to .c4d also seems to allow you to close all files without having to confirm with a save / not save dialogue but there may be a better way around that if you want to change it back to just exporting fbx.
 
 
 ## How?
-Place the script in `\AppData\Roaming\MAXON\{cinemaversion}\library\scripts` or just run it straight in cinema's script-manager
+Place in the Cinema4D scripts folder and restart (You can find your scripts folder by clicking the 'Open Preferences Folder' at the bottom of the Preferences dialogue) or just run it straight in Cinema's script-manager - Script > User Scripts > Run Script... (in r19). It's fairly simple and opening Script > Console should show up any problems.
 
-Below an example of usage. Insert the path of the files you want to export and it creates a `FBX-folder` in same directory.
+This was tested in Cinema4D r19 on a Mac running Monterey (OS 12). I'm no expert so make copies and use those if you're worried.
 
 
-![sb1ksap](https://user-images.githubusercontent.com/44348300/50245534-0fd34e80-03d3-11e9-8ada-0a38f7686486.gif)
 
-### Notes
-
-Takes the latest settings used for FBX export. 
